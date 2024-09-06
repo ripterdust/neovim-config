@@ -20,4 +20,20 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+
+  -- Telescope (used for file and branch finding)
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
+  use {
+    'nvim-telescope/telescope-fzf-native.nvim',
+    run = 'make'
+  }
+
+  -- Theme
+  use { "catppuccin/nvim", as = "catppuccin" }
+
+  -- Terminal
+  use 'voldikss/vim-floaterm'
 end)
