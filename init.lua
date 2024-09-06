@@ -1,0 +1,2 @@
+require('pluginsPackage')
+require('shortcuts')
