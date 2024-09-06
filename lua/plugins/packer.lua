@@ -14,4 +14,10 @@ return require('packer').startup(function(use)
 
   -- Vim plug
   use 'preservim/nerdtree'
+
+  -- Lua line
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
 end)
