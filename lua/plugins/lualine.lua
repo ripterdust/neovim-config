@@ -10,6 +10,16 @@ require('lualine').setup {
           telescope.git_branches()
         end
       }
-    }
+    },
+    lualine_c = {
+      {
+        'filename',
+        on_click = function()
+          -- Abre floaterm y NERDTree
+          vim.cmd('FloatermNew --height=0.4 --width=0.8 --title=Terminal') -- Ajusta altura y ancho según sea necesario
+          vim.cmd('NERDTreeToggle')
+        end
+      },
+    },
   }
 }
