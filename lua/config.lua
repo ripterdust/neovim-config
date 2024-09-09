@@ -2,7 +2,6 @@ vim.api.nvim_create_autocmd("FocusLost", {
   pattern = "*",
   command = "silent! wa"
 })
-
 if vim.fn.has('win32') == 1 or vim.fn.has('win64') == 1 then
   vim.g.clipboard = {
     name = 'win32-clipboard',

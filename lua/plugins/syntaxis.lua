@@ -1,6 +1,4 @@
-require 'nvim-treesitter.configs'.setup {
-  ensure_installed = { "typescript" },
-  highlight = {
-    enable = true,
-  },
-}
+local lspconfig = require('lspconfig')
+
+lspconfig.ts_ls.setup {}
+

@@ -1,4 +1,4 @@
-local telescope = require('telescope.builtin')
+local telescope = require('telescope')
 
 require('lualine').setup {
   sections = {

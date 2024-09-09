@@ -1,15 +1,7 @@
-vim.api.nvim_create_autocmd("VimEnter", {
-  pattern = "*",
-  command = "NERDTree"
-})
-
 vim.cmd [[PackerInstall]]
 
--- Función para recargar la configuración de Nvim
 local function reload_config()
-  -- Recargar el archivo init.lua
   vim.cmd("luafile ~/.config/nvim/init.lua")
-  -- También podrías querer recargar otros archivos si es necesario
 end
 
 -- Configuración de autocommand para recargar la configuración al guardar archivos .lua
@@ -23,4 +15,3 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     end
   end
 })
-
