@@ -1,6 +1,9 @@
 local telescope = require('telescope.builtin')
 
 require('lualine').setup {
+  options = {
+    globalstatus = true
+  },
   sections = {
     lualine_b = {
       {
