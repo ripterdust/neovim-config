@@ -21,3 +21,8 @@ Global_shortcut('<C-k><C-w>', 'bufdo bd')
 Global_shortcut('<C-k><C-f>', 'Telescope live_grep')
 Global_shortcut('<C-k><C-w>', 'qa!')
 Global_shortcut('<C-z>', 'undo')
+
+-- Mapea Ctrl+C para copiar al portapapeles en modo normal y visual
+vim.api.nvim_set_keymap('n', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '<C-c>', '"+y', { noremap = true, silent = true })
+
