@@ -19,3 +19,8 @@ end
 
 vim.wo.number = true
 vim.wo.numberwidth = 4
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.o.swapfile = false
+

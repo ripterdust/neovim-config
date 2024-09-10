@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
 
   -- NERDTree -> File explorer
   use 'preservim/nerdtree'
-
+  use 'Xuyuanp/nerdtree-git-plugin'
 
   -- Barbar -> Tabs
   use 'lewis6991/gitsigns.nvim'
@@ -46,12 +46,26 @@ return require('packer').startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
 
   -- Terminal
-  use 'voldikss/vim-floaterm'
-
+  use {"akinsho/toggleterm.nvim", tag = '*'}
   -- Syntaxis
   use 'neovim/nvim-lspconfig'
   use 'nvim-treesitter/nvim-treesitter'
 
   --  Tmux navigation
   use 'christoomey/vim-tmux-navigator'
+
+  -- Intelisense -> Autocomplete too
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'onsails/lspkind-nvim'
+  
+  -- Brackers -> Autoclose a' highlighting
+  use 'windwp/nvim-autopairs'
+
+  -- Function lines -> Hightlihgting for function limits
+  use 'lukas-reineke/indent-blankline.nvim'
 end)
+
+-- Packer ends
