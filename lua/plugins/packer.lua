@@ -66,6 +66,7 @@ return require('packer').startup(function(use)
 
   -- Function lines -> Hightlihgting for function limits
   use 'lukas-reineke/indent-blankline.nvim'
+
 end)
 
 -- Packer ends
