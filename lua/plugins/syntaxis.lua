@@ -36,4 +36,10 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
   }
 )
 
-prettier.setup({})
+
+null_ls.setup({
+  sources = {
+    null_ls.builtins.formatting.prettier,
+    null_ls.builtins.diagnostics.eslint
+  }
+})
