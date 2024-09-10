@@ -14,13 +14,14 @@ require('lualine').setup {
         end
       }
     },
+ 
     lualine_c = {
       {
         'filename',
         on_click = function()
-          vim.cmd('FloatermNew --height=0.4 --width=0.8 --title=Terminal')
           vim.cmd('NERDTreeToggle')
-        end
+        end,
+        path = 1
       },
     },
   }

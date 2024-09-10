@@ -1,5 +1,7 @@
 local lspconfig = require('lspconfig')
 local cmp = require('cmp')
+local prettier = require('prettier')
+local null_ls = require('null-ls')
 
 lspconfig.ts_ls.setup {}
 
@@ -33,3 +35,5 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
     border = 'rounded'
   }
 )
+
+prettier.setup({})

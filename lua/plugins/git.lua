@@ -7,8 +7,6 @@ require('gitsigns').setup({
     changedelete = { text = '~' },
   },
   signcolumn = true,
-  numh1 = false,
-  lineh1 = false,
   word_diff = false
 })
 

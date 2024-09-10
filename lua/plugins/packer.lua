@@ -50,6 +50,10 @@ return require('packer').startup(function(use)
   -- Syntaxis
   use 'neovim/nvim-lspconfig'
   use 'nvim-treesitter/nvim-treesitter'
+  use {
+  'jose-elias-alvarez/null-ls.nvim',
+    requires = { 'nvim-lua/plenary.nvim' }
+  }
 
   --  Tmux navigation
   use 'christoomey/vim-tmux-navigator'
@@ -66,6 +70,9 @@ return require('packer').startup(function(use)
 
   -- Function lines -> Hightlihgting for function limits
   use 'lukas-reineke/indent-blankline.nvim'
+
+  -- Prettier
+  use 'MunifTanjim/prettier.nvim'
 
 end)
 
