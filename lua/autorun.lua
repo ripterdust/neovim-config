@@ -4,11 +4,9 @@ local function reload_config()
   vim.cmd("luafile ~/.config/nvim/init.lua")
 end
 
--- Configuración de autocommand para recargar la configuración al guardar archivos .lua
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = "*.lua",
   callback = function()
-    -- Ignorar archivos en el directorio de plugins
     local filepath = vim.fn.expand("<afile>")
     if not filepath:match("plugin") then
       reload_config()
@@ -16,4 +14,13 @@ vim.api.nvim_create_autocmd("BufWritePost", {
   end
 })
 
+vim.api.nvim_create_autocmd({"BufLeave", "FocusLost"}, {
+  pattern = "*",
+  callback = function()
+    local buftype = vim.bo.buftype
+    if vim.bo.modified and (buftype == "" or buftype == "acwrite") then
+      vim.cmd('w')
+    end
+  end,
+})
 
