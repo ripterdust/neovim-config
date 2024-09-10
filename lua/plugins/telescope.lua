@@ -3,5 +3,11 @@ require('telescope').setup {
     find_files = {
       theme = 'ivy'
     }
+  },
+  defaults = {
+    file_ignore_patterns = {
+      'node_modules/.*',
+      'dist/.*'
+    }
   }
 }
