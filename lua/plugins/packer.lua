@@ -73,6 +73,9 @@ return require('packer').startup(function(use)
 
   -- Prettier
   use 'MunifTanjim/prettier.nvim'
+
+  -- GIT integration
+  use 'tpope/vim-fugitive'
 end)
 
 -- Packer ends

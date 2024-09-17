@@ -9,5 +9,3 @@ require('gitsigns').setup({
   signcolumn = true,
   word_diff = false
 })
-
-
