@@ -17,14 +17,14 @@ return require('packer').startup(function(use)
 
   use 'ryanoasis/vim-devicons'
 
-  -- NERDTree -> File explorer
-  use 'preservim/nerdtree'
-  use 'Xuyuanp/nerdtree-git-plugin'
-
   -- Barbar -> Tabs
   use 'lewis6991/gitsigns.nvim'
   use 'romgrk/barbar.nvim'
 
+  -- File explorer
+  use 'nvim-tree/nvim-tree.lua'
+
+  use 'rcarriga/nvim-notify'
 
   -- Lua line
   use {

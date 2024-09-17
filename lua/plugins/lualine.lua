@@ -19,7 +19,7 @@ require('lualine').setup {
       {
         'filename',
         on_click = function()
-          vim.cmd('NERDTreeToggle')
+          vim.cmd('NvimTreeToggle')
         end,
         path = 1
       },
