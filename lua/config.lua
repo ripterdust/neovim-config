@@ -25,4 +25,3 @@ vim.opt.expandtab = true
 vim.o.swapfile = false
 vim.opt.mouse = 'a'
 vim.opt.clipboard = 'unnamedplus'
-
