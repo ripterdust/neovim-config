@@ -25,7 +25,7 @@ Global_shortcut('<F-1>', 'Telescope commands')
 Global_shortcut('<C-f>', 'Telescope live_grep')
 Global_shortcut('<F1>', 'Telescope commands')
 Global_shortcut('<C-b>', 'Telescope current_buffer_fuzzy_find')
-Global_shortcut('<F-2>', 'NvimTreeFindFile')
+Global_shortcut('<F2>', 'NvimTreeFindFile')
 
 
 
