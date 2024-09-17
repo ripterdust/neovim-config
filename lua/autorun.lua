@@ -31,4 +31,10 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   end,
 })
 
+local function open_nvim_tree()
+    local file = vim.fn.expand("%:p")
+    if vim.fn.isdirectory(file) == 1 then
+        require'nvim-tree'.open()
+    end
+end
 vim.notify("Wellcome again, hope you are doing good!", "info", {title = "Wellcome"})

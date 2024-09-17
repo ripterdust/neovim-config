@@ -73,7 +73,6 @@ return require('packer').startup(function(use)
 
   -- Prettier
   use 'MunifTanjim/prettier.nvim'
-
 end)
 
 -- Packer ends
