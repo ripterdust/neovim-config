@@ -28,3 +28,7 @@
 ## Navigation
 * C-(h,j,k,l) -> Moves to the window
 
+## Notes
+* The editor was configured by saving on focus lost.
+* The editor has already configured typescript-language-server but you can add more servers.
+* You need to have a NERDFont already installed in your terminal
