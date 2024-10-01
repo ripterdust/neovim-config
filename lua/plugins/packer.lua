@@ -79,6 +79,22 @@ return require('packer').startup(function(use)
 
   -- Markdown preview
   use {'iamcco/markdown-preview.nvim'}
+
+
+  -- Dashboard
+  use {
+    'nvimdev/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
+      require('dashboard').setup {
+        -- config
+      }
+    end,
+    requires = {'nvim-tree/nvim-web-devicons'}
+  }
+
+  -- Github copilot
+  use 'github/copilot.vim'
 end)
 
 -- Packer ends

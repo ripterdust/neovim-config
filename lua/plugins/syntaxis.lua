@@ -3,7 +3,7 @@ local cmp = require('cmp')
 local prettier = require('prettier')
 local null_ls = require('null-ls')
 
-lspconfig.tsserver.setup {}
+lspconfig.ts_ls.setup {}
 lspconfig.gopls.setup({})
 lspconfig.rust_analyzer.setup{
   settings = {
