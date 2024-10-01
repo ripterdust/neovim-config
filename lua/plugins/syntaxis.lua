@@ -51,7 +51,6 @@ null_ls.setup({
   }
 })
 
-
 -- Snipets
 require("luasnip.loaders.from_vscode").load {
 }
