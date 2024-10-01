@@ -14,13 +14,14 @@ lspconfig.rust_analyzer.setup{
 cmp.setup({
   snippet = {
     expand = function(args)
-      vim.fn["vsnip#anonymous"](args.body) -- Si usas otro snippet engine, cámbialo aquí
+      require('luasnip').lsp_expand(args.body)
+      --vim.fn["vsnip#anonymous"](args.body)
     end,
   },
   sources = {
-    { name = 'nvim_lsp' }, -- Fuente LSP para autocompletado
-    { name = 'buffer' },   -- Completado basado en el contenido del buffer
-    { name = 'path' },     -- Completado de rutas de archivo
+    { name = 'nvim_lsp' },
+    { name = 'buffer' },
+    { name = 'path' },
   },
   mapping = {
     ['<Down>'] = cmp.mapping.select_next_item(),
@@ -29,7 +30,7 @@ cmp.setup({
       if cmp.visible() then
         cmp.select_next_item()
       else
-        fallback() -- Si no hay sugerencias, Tab funciona como siempre
+        fallback()
       end
     end,  { 'i', 's' }),
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
@@ -49,3 +50,8 @@ null_ls.setup({
     null_ls.builtins.diagnostics.eslint
   }
 })
+
+
+-- Snipets
+require("luasnip.loaders.from_vscode").load {
+}

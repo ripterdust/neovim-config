@@ -44,7 +44,7 @@ return require('packer').startup(function(use)
 
   -- Theme
   use { "catppuccin/nvim", as = "catppuccin" }
-
+  use 'rebelot/kanagawa.nvim'
   -- Terminal
   use {"akinsho/toggleterm.nvim", tag = '*'}
   -- Syntaxis
@@ -64,6 +64,14 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'onsails/lspkind-nvim'
+  use({
+	  "L3MON4D3/LuaSnip",
+	  -- follow latest release.
+	  tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	  -- install jsregexp (optional!:).
+	  run = "make install_jsregexp",
+    requires = { "rafamadriz/friendly-snippets" }
+  })
   
   -- Brackers -> Autoclose a' highlighting
   use 'windwp/nvim-autopairs'
@@ -95,6 +103,7 @@ return require('packer').startup(function(use)
 
   -- Github copilot
   use 'github/copilot.vim'
+  
 end)
 
 -- Packer ends
