@@ -76,6 +76,9 @@ return require('packer').startup(function(use)
 
   -- GIT integration
   use 'tpope/vim-fugitive'
+
+  -- Markdown preview
+  use {'iamcco/markdown-preview.nvim'}
 end)
 
 -- Packer ends
