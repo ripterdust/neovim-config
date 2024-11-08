@@ -1,4 +1,4 @@
 require('themery').setup({
-  themes = {'catppuccin', 'kanagawa'},
+  themes = {'catppuccin', 'kanagawa', 'tokyonight'},
   livePreview = true
 })

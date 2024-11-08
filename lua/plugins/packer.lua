@@ -46,6 +46,7 @@ return require('packer').startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
   use 'rebelot/kanagawa.nvim'
   use 'zaldih/themery.nvim'
+  use 'folke/tokyonight.nvim'
 
   -- Terminal
   use {"akinsho/toggleterm.nvim", tag = '*'}
@@ -102,8 +103,7 @@ return require('packer').startup(function(use)
     end,
     requires = {'nvim-tree/nvim-web-devicons'}
   }
-
-
+  
   -- Github copilot
   -- use 'github/copilot.vim',
   
