@@ -98,11 +98,11 @@ return require('packer').startup(function(use)
         -- config
       }
     end,
-    requires = {'nvim-tree/nvim-web-devicons'}
+    requires = {'nvim-tree/nvim-web-devicons'},
   }
 
   -- Github copilot
-  use 'github/copilot.vim'
+  -- use 'github/copilot.vim',
   
 end)
 

@@ -3,7 +3,9 @@ local cmp = require('cmp')
 local prettier = require('prettier')
 local null_ls = require('null-ls')
 
-lspconfig.ts_ls.setup {}
+lspconfig.ts_ls.setup {
+
+}
 lspconfig.gopls.setup({})
 lspconfig.rust_analyzer.setup{
   settings = {
@@ -27,7 +29,7 @@ cmp.setup({
     ['<Down>'] = cmp.mapping.select_next_item(),
     ['<Up>'] = cmp.mapping.select_prev_item(),
     ['<Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
+      if cmp.visible() then 
         cmp.select_next_item()
       else
         fallback()
