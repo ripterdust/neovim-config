@@ -23,9 +23,18 @@ return require('packer').startup(function(use)
 
   -- File explorer
   use 'nvim-tree/nvim-tree.lua'
+  use {
+    'nvim-neo-tree/neo-tree.nvim',
+    branch = "v3.x",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+      'ryanoasis/vim-devicons'
+    }
+  }
 
+  -- Notifications
   use 'rcarriga/nvim-notify'
-
   -- Lua line
   use {
     'nvim-lualine/lualine.nvim',
@@ -47,6 +56,11 @@ return require('packer').startup(function(use)
   use 'rebelot/kanagawa.nvim'
   use 'zaldih/themery.nvim'
   use 'folke/tokyonight.nvim'
+  use {
+    "nobbmaestro/nvim-andromeda",
+    requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
+  }
+  use ({ 'projekt0n/github-nvim-theme' })
 
   -- Terminal
   use {"akinsho/toggleterm.nvim", tag = '*'}
@@ -106,6 +120,8 @@ return require('packer').startup(function(use)
   
   -- Github copilot
   -- use 'github/copilot.vim',
+  
+
   
 end)
 

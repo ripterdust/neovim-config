@@ -49,10 +49,13 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
 null_ls.setup({
   sources = {
     null_ls.builtins.formatting.prettier,
-    null_ls.builtins.diagnostics.eslint
+    null_ls.builtins.diagnostics.eslint,
+    null_ls.builtins.diagnostics.eslint_d.with({
+      extra_args = { "--no-warn-ignored" },
+    }),
   }
 })
 
 -- Snipets
-require("luasnip.loaders.from_vscode").load {
-}
+--require("luasnip.loaders.from_vscode").load {
+--}
