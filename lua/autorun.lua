@@ -32,3 +32,4 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 vim.notify("Wellcome again, hope you are doing good!", "info", { title = "Wellcome" })
+

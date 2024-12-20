@@ -61,15 +61,15 @@ return require('packer').startup(function(use)
     "nobbmaestro/nvim-andromeda",
     requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
   }
-  use ({ 'projekt0n/github-nvim-theme' })
+  use({ 'projekt0n/github-nvim-theme' })
 
   -- Terminal
-  use {"akinsho/toggleterm.nvim", tag = '*'}
+  use { "akinsho/toggleterm.nvim", tag = '*' }
   -- Syntaxis
   use 'neovim/nvim-lspconfig'
   use 'nvim-treesitter/nvim-treesitter'
   use {
-  'jose-elias-alvarez/null-ls.nvim',
+    'jose-elias-alvarez/null-ls.nvim',
     requires = { 'nvim-lua/plenary.nvim' }
   }
 
@@ -83,14 +83,14 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'onsails/lspkind-nvim'
   use({
-	  "L3MON4D3/LuaSnip",
-	  -- follow latest release.
-	  tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-	  -- install jsregexp (optional!:).
-	  run = "make install_jsregexp",
+    "L3MON4D3/LuaSnip",
+    -- follow latest release.
+    tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    -- install jsregexp (optional!:).
+    run = "make install_jsregexp",
     requires = { "rafamadriz/friendly-snippets" }
   })
-  
+
   -- Brackers -> Autoclose a' highlighting
   use 'windwp/nvim-autopairs'
 
@@ -104,7 +104,7 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
 
   -- Markdown preview
-  use {'iamcco/markdown-preview.nvim'}
+  use { 'iamcco/markdown-preview.nvim' }
 
 
   -- Dashboard
@@ -116,14 +116,11 @@ return require('packer').startup(function(use)
         -- config
       }
     end,
-    requires = {'nvim-tree/nvim-web-devicons'}
+    requires = { 'nvim-tree/nvim-web-devicons' }
   }
-  
+
   -- Github copilot
   -- use 'github/copilot.vim',
-  
-
-  
 end)
 
 -- Packer ends
