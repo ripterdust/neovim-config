@@ -6,6 +6,7 @@ local null_ls = require('null-ls')
 lspconfig.ts_ls.setup {
 
 }
+lspconfig.lua_ls.setup{}
 lspconfig.gopls.setup({})
 lspconfig.rust_analyzer.setup{
   settings = {
