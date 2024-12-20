@@ -12,7 +12,7 @@ end
 Global_shortcut('<C-1>', 'BufferGoto 1')
 
 -- Existing mappings
-map('n', '<leader>f', ':NvimTreeToggle<CR>', opts)
+map('n', '<leader>f', ':Neotree toggle<CR>', opts)
 map('n', '<C-p>', ':Telescope find_files<CR>', opts)
 map('n', '<leader>t', ':ToggleTerm<CR>', opts)
 Global_shortcut('<C-s>', ':w')

@@ -4,6 +4,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
   command = "source <afile> | PackerCompile",
 })
 
+
 return require('packer').startup(function(use)
   -- DO NOT REMOVE -> Packer
   use 'wbthomason/packer.nvim'
