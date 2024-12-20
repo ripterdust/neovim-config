@@ -53,8 +53,11 @@ return require('packer').startup(function(use)
   }
 
   -- Theme
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use {
+    "catppuccin/nvim", as = "catppuccin",
+  }
   use 'rebelot/kanagawa.nvim'
+  use "bluz71/vim-moonfly-colors"
   use 'zaldih/themery.nvim'
   use 'folke/tokyonight.nvim'
   use {
