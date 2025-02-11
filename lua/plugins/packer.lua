@@ -65,6 +65,7 @@ return require('packer').startup(function(use)
     requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
   }
   use({ 'projekt0n/github-nvim-theme' })
+  use { 'rose-pine/neovim' }
 
   -- Terminal
   use { "akinsho/toggleterm.nvim", tag = '*' }

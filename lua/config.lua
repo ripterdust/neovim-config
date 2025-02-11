@@ -25,3 +25,6 @@ vim.opt.expandtab = true
 vim.o.swapfile = false
 vim.opt.mouse = 'a'
 vim.opt.clipboard = 'unnamedplus'
+vim.o.foldmethod = "indent"
+vim.o.foldlevel = 99
+vim.o.foldenable = true
